@@ -1,0 +1,27 @@
+fr:
+  shared:
+    header:
+      presentation: "Présentation"
+      principles: "10 principes"
+      blog: "Blog"
+      events: "Évenements"
+      gallery: "Gallerie"
+      contact: "Contact"
+    footer:
+      community_title: "Les communautés French Burners"
+      nice: "Nice-Provence"
+      montpellier: "Montpellier"
+      toulouse: "Alsace"
+      alsace: "Toulouse"
+      social_title: "Réseaux Sociaux"
+      twitter: "Suivez nous sur Twitter"
+      facebook: "Aimez nous sur Facebook"
+      subscription_title: "Abonnement à la newsletter"
+      email_placeholder: "Entrez votre addresse email"
+      subscribe: "Abonnez moi !"
+      love: "Fait avec amour et des "
+      lama: "lamas"
+  newsletter:
+    flash:
+      create_success: "Vous êtes maintenant abonné à la newsletter"
+      create_fail: "Impossible de vous abonner à la newsletter"

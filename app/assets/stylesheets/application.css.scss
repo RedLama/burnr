@@ -1,0 +1,107 @@
+/*
+ *= require reset
+ *= require_self
+ */
+
+@import 'bourbon';
+$_gray: #999;
+$_lightgray: #F0F0F0;
+$_red: #E74C3C;
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: $_gray;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =============== */
+/* ==== HEADER === */
+/* =============== */
+#header {
+  .logo, ul, li {
+    float: left;
+  }
+  .logo {
+    margin-right: 20px;
+    padding-left: 10%;
+    img {
+      width: 195px;
+      height: 46px;
+    }
+  }
+
+  ul {
+    height: 50px;
+    li {
+      a {
+        padding: 0 16px;
+        line-height: 50px;
+      }
+      a:hover, a.active {
+        color: $_red;
+      }
+    }
+  }
+
+  .flash {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  .flash.success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+  }
+  .flash.error {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+  }
+  .flash.notice {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+  }
+}
+
+/* =============== */
+/* ==== FOOTER === */
+/* =============== */
+#footer {
+  width: 100%;
+
+  .content {
+    background-color: $_lightgray;
+    padding: 5% 10%;
+    width: 80%;
+  }
+
+  a {
+    color: $_red;
+  }
+
+  .box {
+    float: left;
+    width: 33.3%;
+    h2 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: black;
+    }
+  }
+
+  .copyright {
+    background-color: white;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+  }
+}

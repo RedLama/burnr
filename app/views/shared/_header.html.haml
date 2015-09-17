@@ -1,0 +1,12 @@
+#header
+  %p.logo= link_to image_tag("logo.png"), root_url
+  %ul#menu
+    %li= link_to t('.presentation'), "#", class: params[:controller] == "home" && params[:action] == "show" ? "active" : ""
+    %li= link_to t('.principles'), "#"
+    %li= link_to t('.blog'), "#"
+    %li= link_to t('.events'), "#"
+    %li= link_to t('.gallery'), "#"
+    %li= link_to t('.contact'), "#"
+  .clearette
+  - flash.each do |flash_type, flash_text|
+    = content_tag(:p, flash_text, :class => "flash #{flash_type}")

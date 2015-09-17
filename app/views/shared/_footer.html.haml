@@ -1,0 +1,24 @@
+#footer
+  .content
+    .box
+      %h2= t('.community_title')
+      %ul.communities
+        %li= link_to t('.nice'), "https://www.facebook.com/groups/frenchburnersnice", target: "_blank"
+        %li= link_to t('.montpellier'), "https://www.facebook.com/groups/215456928623052", target: "_blank"
+        %li= link_to t('.alsace'), "https://www.facebook.com/FlamnKitsch", target: "_blank"
+        %li= link_to t('.toulouse'), "https://www.facebook.com/groups/southwestfrenchburners", target: "_blank"
+    .box
+      %h2= t('.social_title')
+      %ul.social
+        %li= link_to t('.twitter'), "https://twitter.com/frenchburners", target: "_blank"
+        %li= link_to t('.facebook'), "https://www.facebook.com/frenchburners", target: "_blank"
+    .box
+      %h2= t('.subscription_title')
+      = form_for @newsletter do |f|
+        = f.text_field :email, placeholder: t('.email_placeholder')
+        = f.submit t('.subscribe')
+    .clearette
+  .copyright
+    %p
+      = t('.love')
+      %span= link_to t('.lama'), 'http://redlama.fr', target: "_blank"
