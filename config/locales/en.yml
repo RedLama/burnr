@@ -1,4 +1,12 @@
 en:
+  admin:
+    not_enough_right: "You can't see this page"
+    shared:
+      header:
+        newsletter: "Newsletter"
+        slideshow: "Slideshow"
+        users: "Users"
+
   shared:
     header:
       presentation: "Presentation"
@@ -7,6 +15,7 @@ en:
       events: "Events"
       gallery: "Gallery"
       contact: "Contact"
+      login: "Login"
     footer:
       community_title: "French Burners communities"
       nice: "Nice-Provence"
@@ -25,3 +34,5 @@ en:
     flash:
       create_success: "You successfully subscribe to the newsletter"
       create_fail: "Unable to add you to the newsletter"
+      delete_success: "Subscription deleted"
+      delete_email: "Unable to delete this subscription"

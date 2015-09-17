@@ -1,0 +1,17 @@
+#newsletter_index
+  .panel.panel-default
+    .table-responsive
+      %table.table.table-striped.table-hovered
+        %thead
+          %tr
+            %th #
+            %th= t('.email')
+            %th= t('.created_at')
+            %th= t('.action')
+
+        - @newsletters.each_with_index do |newsletter, index|
+          %tr
+            %th= index
+            %td= newsletter.email
+            %td= newsletter.created_at
+            %td= link_to t('.delete'), admin_newsletter_url(newsletter), method: :delete

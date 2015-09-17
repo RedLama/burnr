@@ -1,0 +1,19 @@
+#user_index
+  .panel.panel-default
+    .table-responsive
+      %table.table.table-striped.table-hovered
+        %thead
+          %tr
+            %th #
+            %th= t('.email')
+            %th= t('.created_at')
+            %th= t('.role')
+            %th= t('.action')
+
+        - @users.each_with_index do |user, index|
+          %tr
+            %th= index
+            %td= user.email
+            %td= user.created_at
+            %td= user.role
+            %td= link_to t('.delete'), admin_user_url(user), method: :delete

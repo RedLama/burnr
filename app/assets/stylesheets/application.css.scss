@@ -22,6 +22,7 @@ a {
 /* ==== HEADER === */
 /* =============== */
 #header {
+  margin-top: 10px;
   .logo, ul, li {
     float: left;
   }
@@ -34,17 +35,29 @@ a {
     }
   }
 
-  ul {
+  a{
     height: 50px;
-    li {
-      a {
-        padding: 0 16px;
-        line-height: 50px;
-      }
-      a:hover, a.active {
-        color: $_red;
-      }
+    padding: 0 16px;
+    line-height: 50px;
+    font-size: 0.95em;
+    &:hover, &.active {
+      color: $_red;
     }
+  }
+
+  .login {
+    float: right;
+    right: 20%;
+  }
+
+  .administration {
+    margin-top: 10px;
+  }
+  .logout, .administration {
+     text-align: right;
+  }
+  .administration a, .logout a {
+    line-height: normal;
   }
 
   .flash {
@@ -59,7 +72,7 @@ a {
     background-color: #dff0d8;
     border-color: #d6e9c6;
   }
-  .flash.error {
+  .flash.error, .flash.alert {
     color: #b94a48;
     background-color: #f2dede;
     border-color: #eed3d7;

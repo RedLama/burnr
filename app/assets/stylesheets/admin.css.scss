@@ -1,0 +1,10 @@
+/*
+*= require reset
+*= require bootstrap_and_overrides
+*= require_self
+*/
+@import 'bourbon';
+
+#newsletter_index, #user_index {
+  padding: 0 5%;
+}
