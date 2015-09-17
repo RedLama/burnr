@@ -10,8 +10,8 @@
     .box
       %h2= t('.social_title')
       %ul.social
-        %li= link_to t('.twitter'), "https://twitter.com/frenchburners", target: "_blank"
-        %li= link_to t('.facebook'), "https://www.facebook.com/frenchburners", target: "_blank"
+        %li= link_to t('.twitter'), "https://twitter.com/frenchburners", target: "_blank", class: "twitter"
+        %li= link_to t('.facebook'), "https://www.facebook.com/frenchburners", target: "_blank", class: "facebook"
     .box
       %h2= t('.subscription_title')
       = form_for @newsletter do |f|

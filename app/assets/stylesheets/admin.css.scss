@@ -1,9 +1,6 @@
-/*
-*= require reset
-*= require bootstrap_and_overrides
-*= require_self
-*/
 @import 'bourbon';
+@import 'reset';
+@import 'bootstrap_and_overrides';
 
 #newsletter_index, #user_index {
   padding: 0 5%;

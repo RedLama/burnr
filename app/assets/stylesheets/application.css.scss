@@ -1,9 +1,6 @@
-/*
- *= require reset
- *= require_self
- */
-
 @import 'bourbon';
+@import 'reset';
+
 $_gray: #999;
 $_lightgray: #F0F0F0;
 $_red: #E74C3C;
@@ -107,6 +104,50 @@ a {
       margin-bottom: 10px;
       font-size: 1.2em;
       color: black;
+    }
+  }
+
+  .communities li {
+    float: left;
+    width: 50%;
+    padding: 10px 0;
+  }
+
+  .social a {
+    display: block;
+    height: 42px;
+    padding-left: 45px;
+    line-height: 42px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    &.twitter {
+      background-image: url(image-path("twitter.png"))
+    }
+    &.facebook {
+      background-image: url(image-path("facebook.png"))
+    }
+  }
+
+  form {
+    input[type="text"] {
+      background-color: #fcfcfc;
+      border: 2px solid #eaeaea;
+      font-size: 14px;
+      padding: 14px;
+      width: 100%;
+      font-style:italic;
+      border-radius: 3px;
+    }
+    input[type="submit"] {
+      margin-bottom: 0;
+      padding: 6px 12px;
+      font-size: 14px;
+      text-align: center;
+      cursor: pointer;
+      color: white;
+      background-color : #0F4466;
+      border: 1px solid #adadad;
+      border-radius: 4px;
     }
   }
 
