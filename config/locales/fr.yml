@@ -6,6 +6,25 @@ fr:
         newsletter: "Newsletter"
         slideshow: "Slideshow"
         users: "Utilisateurs"
+    newsletters:
+      index:
+        email: "Couriel"
+        created_at: "Crée le"
+        action: "Actions"
+        delete: "Supprimer"
+    users:
+      index:
+        email: "Couriel"
+        created_at: "Crée le"
+        role: "Rôle"
+        action: "Actions"
+        delete: "Supprimer"
+    slideshows:
+      index:
+        create_title: "Ajouter un slide"
+        url_placeholder: "Lien du slide"
+        submit: "Ajout"
+
   shared:
     header:
       presentation: "Présentation"
@@ -34,4 +53,10 @@ fr:
       create_success: "Vous êtes maintenant abonné à la newsletter"
       create_fail: "Impossible de vous abonner à la newsletter"
       delete_success: "Abonnement supprimé"
-      delete_email: "Impossible de supprimé cet abonnement"
+      delete_fail: "Impossible de supprimé cet abonnement"
+  slideshow:
+    flash:
+      create_success: "Slide ajouté avec succès"
+      create_fail: "Impossible d'ajouter ce slide"
+      delete_success: "Slide supprimé"
+      delete_fail: "Impossible de supprimé ce slide"

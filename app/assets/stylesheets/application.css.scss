@@ -19,13 +19,14 @@ a {
 /* ==== HEADER === */
 /* =============== */
 #header {
-  margin-top: 10px;
+  padding-top: 10px;
   .logo, ul, li {
     float: left;
   }
   .logo {
     margin-right: 20px;
     padding-left: 10%;
+    height: 46px;
     img {
       width: 195px;
       height: 46px;
@@ -33,7 +34,7 @@ a {
   }
 
   a{
-    height: 50px;
+    height: 30px;
     padding: 0 16px;
     line-height: 50px;
     font-size: 0.95em;
@@ -56,28 +57,58 @@ a {
   .administration a, .logout a {
     line-height: normal;
   }
+}
 
-  .flash {
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-bottom: 1px solid;
+/* =============== */
+/* == SLIDESHOW == */
+/* =============== */
+#slideshow {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+
+  .next, .previous {
+    position: absolute;
+    top: 50%;
+    margin-top: -16.5px;
+    width: 33px;
+    height: 33px;
+    .image {
+      margin: 0;
+      opacity: 0.5;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      border-radius: 25px;
+    }
   }
-  .flash.success {
-    color: #3c763d;
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
+  .next {
+    right: 1%;
+    background: transparent url(image-path('right_arrow.png')) center center no-repeat;
   }
-  .flash.error, .flash.alert {
-    color: #b94a48;
-    background-color: #f2dede;
-    border-color: #eed3d7;
+  .previous {
+    left: 1%;
+    background: transparent url(image-path('left_arrow.png')) center center no-repeat;
   }
-  .flash.notice {
-    color: #8a6d3b;
-    background-color: #fcf8e3;
-    border-color: #faebcc;
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  li {
+    float: left;
+    height: 100%;
+    .image {
+      display: block;
+      width: 1080px;
+      height: 100%;
+      background-position: center center;
+    }
   }
 }
 

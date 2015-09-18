@@ -6,7 +6,19 @@ en:
         newsletter: "Newsletter"
         slideshow: "Slideshow"
         users: "Users"
-
+    newsletters:
+      index:
+        email: "Couriel"
+        created_at: "Created at"
+        action: "Actions"
+        delete: "Delete"
+    users:
+      index:
+        email: "Couriel"
+        created_at: "Created at"
+        role: "Role"
+        action: "Actions"
+        delete: "Delete"
   shared:
     header:
       presentation: "Presentation"
@@ -36,3 +48,9 @@ en:
       create_fail: "Unable to add you to the newsletter"
       delete_success: "Subscription deleted"
       delete_email: "Unable to delete this subscription"
+  slideshow:
+    flash:
+      create_success: "Slide successfully added"
+      create_fail: "Unable to add this slide"
+      delete_success: "Slide deleted"
+      delete_email: "Unable to delete this slide"

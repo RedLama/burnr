@@ -12,7 +12,7 @@
       %ul.nav.navbar-nav
         %li{class: params[:controller] == "admin/newsletters" ? "active" : ""}= link_to t('.newsletter'), admin_newsletters_url
         %li{class: params[:controller] == "admin/users" ? "active" : ""}= link_to t('.users'), admin_users_url
-        %li{class: params[:controller] == "admin/slideshow" ? "active" : ""}= link_to t('.slideshow'), "#"
+        %li{class: params[:controller] == "admin/slideshow" ? "active" : ""}= link_to t('.slideshow'), admin_slideshows_url
         %li.dropdown
           %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
             Dropdown
@@ -33,3 +33,5 @@
       %ul.nav.navbar-nav.navbar-right
         %li
           %button.btn.btn-default.navbar-btn{:type => "button"} Sign out
+- flash.each do |flash_type, flash_text|
+  = content_tag(:p, flash_text, :class => "flash #{flash_type}")

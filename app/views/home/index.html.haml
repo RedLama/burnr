@@ -1,4 +1,10 @@
 #home_index
   #slideshow
-    %ul
-      %li
+    %ul{ :style => "width: #{@slideshows.count * 100}%;"}
+      -@slideshows.each do |slideshow|
+        %li
+          = link_to "", slideshow.url.blank? ? "#" : slideshow.url, style: "background-image: url(#{slideshow.picture.url(:slide)});", class: "image resizable-slideshow"
+    .next
+      %p.image
+    .previous
+      %p.image

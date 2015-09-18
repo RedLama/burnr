@@ -1,7 +1,28 @@
+/*
+ *= require bootstrap_and_overrides
+ */
 @import 'bourbon';
 @import 'reset';
-@import 'bootstrap_and_overrides';
 
-#newsletter_index, #user_index {
-  padding: 0 5%;
+nav.navbar {
+  margin-bottom: 0;
+}
+
+#newsletter_index, #user_index, #slideshow_index {
+  padding: 20px 5% 0;
+}
+
+#slideshow_index {
+  .new {
+    float: right;
+    width: 20%;
+    padding: 1%;
+    h2 {
+      padding-bottom: 10px;
+    }
+  }
+  .list {
+    width: 75%;
+    padding: 1%;
+  }
 }
