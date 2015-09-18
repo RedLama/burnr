@@ -2,6 +2,7 @@
 @import 'reset';
 
 $_gray: #999;
+$_dark: #444;
 $_lightgray: #F0F0F0;
 $_red: #E74C3C;
 
@@ -109,6 +110,55 @@ a {
       height: 100%;
       background-position: center center;
     }
+  }
+}
+
+/* =============== */
+/* ==== PAGES ==== */
+/* =============== */
+#page_show {
+  padding: 2% 15%;
+
+  h1, h2, strong {
+    color: $_dark;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+  }
+  h2 {
+    margin: 10px 0;
+    font-size: 2em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  p, li {
+    line-height: 170%;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  ul {
+    margin: 10px 0 5px 5%;
+    list-style-position: inside;
+    list-style-type: square;
+  }
+
+  a{
+    @include inline-block;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background-color : #0F4466;
+    border: 1px solid #adadad;
+    border-radius: 4px;
   }
 }
 
