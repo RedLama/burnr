@@ -14,8 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 
-$(document).ready(function() {
-
+$(document).on('page:change', function(event) {
   // slideshow
   resizeSlideshow("slideshow", 1600, 450);
 
