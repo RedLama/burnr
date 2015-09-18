@@ -16,6 +16,7 @@
 
 $(document).ready(function() {
 
+  // slideshow
   resizeSlideshow("slideshow", 1600, 450);
 
   setInterval(slideshowNext, 5000);
@@ -45,4 +46,23 @@ $(document).ready(function() {
       $("#slideshow").css('height', Math.floor(contentWidth / ratio) - parseInt(paddingTop));
     });
   }
+  // end slideshow
+
+  // menu
+  $('.parent').hover(function(){
+    $(this).find('.childs').show();
+  });
+
+  $('.parent').mouseleave(function(){
+    if($(this).find('.childs:hover').length == 0) {
+      $(this).find('.childs').hide();
+    }
+  });
+
+  $('.childs').mouseleave(function(){
+    if($(this).closest('.parent:hover').length == 0) {
+      $(this).hide();
+    }
+  });
+  // end menu
 });

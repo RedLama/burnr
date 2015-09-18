@@ -34,13 +34,29 @@ a {
     }
   }
 
-  a{
-    height: 30px;
+  a, .parent{
+    cursor: pointer;
     padding: 0 16px;
     line-height: 50px;
     font-size: 0.95em;
     &:hover, &.active {
       color: $_red;
+    }
+  }
+
+  .parent {
+    position: relative;
+    .childs {
+      position: absolute;
+      float: none;
+      width: 120%;
+      z-index: 15;
+      background-color: white;
+      border-radius-bottom: 3px;
+      li {
+        width: 100%;
+        border-top: 1px solid $_gray;
+      }
     }
   }
 
@@ -159,6 +175,27 @@ a {
     background-color : #0F4466;
     border: 1px solid #adadad;
     border-radius: 4px;
+  }
+
+  .left_image, .right_image {
+    padding: 10px;
+  }
+  .left_image {
+    float: left;
+    padding-left: 0;
+  }
+  .right_image {
+    float: right;
+    padding-right: 0;
+  }
+
+  table {
+    width: 100%;
+    td {
+      padding: 8px;
+      line-height: 142%;
+      vertical-align: top;
+    }
   }
 }
 

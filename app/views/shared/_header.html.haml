@@ -1,8 +1,12 @@
 #header
   %p.logo= link_to image_tag("logo.png"), root_url
   %ul#menu
-    %li= link_to t('.presentation'), "#", class: params[:controller] == "home" && params[:action] == "show" ? "active" : ""
-    %li= link_to t('.principles'), "#"
+    %li.parent
+      %span{class: params[:controller] == "pages" && (params[:id] == "frenchburners" || params[:id] == "burningman") ? "active" : ""}= t('.presentation')
+      %ul.childs.hide
+        %li= link_to "French Burners", frenchburners_url
+        %li= link_to "Burning Man", burningman_url
+    %li= link_to t('.principles'), principles_url, class: params[:controller] == "pages" && params[:id] == "10-principles" ? "active" : ""
     %li= link_to t('.blog'), "#"
     %li= link_to t('.events'), "#"
     %li= link_to t('.gallery'), "#"
