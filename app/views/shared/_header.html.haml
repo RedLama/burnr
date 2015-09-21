@@ -17,6 +17,12 @@
       %p.logout= link_to t('.logout'), destroy_user_session_url, method: :delete
     - else
       %p.auth= link_to t('.login'), new_user_session_url
+  .lang
+    = link_to "fr", url_for(params.merge(locale: 'fr')), class: I18n.locale == :fr ? "active" : ""
+    %span
+      |
+    = link_to "en", url_for(params.merge(locale: 'en')), class: I18n.locale == :en ? "active" : ""
+
   .clearette
   - flash.each do |flash_type, flash_text|
     = content_tag(:p, flash_text, :class => "flash #{flash_type}")

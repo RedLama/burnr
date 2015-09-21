@@ -16,4 +16,8 @@ class Admin::AdminController < ActionController::Base
   def is_admin?
     redirect_to root_url, flash: {error: t('admin.not_enough_right')} if current_user.role != "admin"
   end
+
+  def default_url_options(options = {})
+    { locale: I18n.locale }.merge options
+  end
 end

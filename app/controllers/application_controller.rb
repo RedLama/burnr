@@ -13,4 +13,8 @@ class ApplicationController < ActionController::Base
   def newsletter
     @newsletter = Newsletter.new
   end
+
+  def default_url_options(options = {})
+    { locale: I18n.locale }.merge options
+  end
 end
