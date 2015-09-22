@@ -52,3 +52,5 @@ gem 'globalize', '~> 4.0.3'
 # gem 'debugger', group: [:development, :test]
 
 gem 'awesome_print', group: [:development]
+
+gem 'rails_stdout_logging', group: :production
