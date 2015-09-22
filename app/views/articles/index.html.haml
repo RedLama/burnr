@@ -7,5 +7,7 @@
           - if article.publish_date
             %span.date= t('.date', date: l(article.publish_date, format: :long))
           %span.author= t('.author', author: article.user.email)
-        %div.content
-          = markdown(article.content).truncate(1000).html_safe
+        .content
+          = markdown_for_index(article.content.truncate(1000))
+          .read_next
+            = link_to t('.read_next'), article_url(article)

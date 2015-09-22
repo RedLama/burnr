@@ -88,6 +88,7 @@ en:
     index:
       date: "Published at %{date} "
       author: "by %{author}"
+      read_next: "Read more ..."
     flash:
       create_success: "Article successfully added"
       create_fail: "Unable to add this article"
