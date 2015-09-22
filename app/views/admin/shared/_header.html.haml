@@ -13,6 +13,7 @@
         %li{class: params[:controller] == "admin/newsletters" ? "active" : ""}= link_to t('.newsletter'), admin_newsletters_url
         %li{class: params[:controller] == "admin/users" ? "active" : ""}= link_to t('.users'), admin_users_url
         %li{class: params[:controller] == "admin/slideshow" ? "active" : ""}= link_to t('.slideshow'), admin_slideshows_url
+        %li{class: params[:controller] == "admin/articles" ? "active" : ""}= link_to t('.articles'), admin_articles_url
         %li.dropdown
           %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
             Dropdown

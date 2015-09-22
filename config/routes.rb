@@ -10,10 +10,13 @@ Rails.application.routes.draw do
     get "french-burners", to: "pages#show", as: "frenchburners", defaults: { id: "frenchburners"}
     get "burning-man", to: "pages#show", as: "burningman", defaults: { id: "burningman" }
 
+    resources :articles, only: [:index, :show]
+
     namespace :admin do
       resources :newsletters, only: [:index, :destroy]
       resources :users, only: [:index, :destroy]
       resources :slideshows, only: [:index, :create, :destroy]
+      resources :articles, except: [:show]
     end
   end
 

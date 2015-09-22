@@ -1,0 +1,14 @@
+.form-group
+  = builder.label :title
+  = builder.text_field :title, class: "form-control"
+.form-group
+  = builder.label :content
+  = builder.text_area :content, class: "form-control", rows: 12
+.form-group
+  = builder.label :status
+  = builder.select :status, [ [t('activerecord.attributes.article.statuses.draft'), "draft"],
+    [t('activerecord.attributes.article.statuses.published'), "published"],
+    [t('activerecord.attributes.article.statuses.archived'), 'archived'] ], class: "form-control"
+.form-group
+  = builder.label :publish_date
+  = builder.text_field :publish_date, class: "form-control"

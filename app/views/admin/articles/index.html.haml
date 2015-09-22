@@ -1,0 +1,22 @@
+#article_index
+  %p= link_to t('.add'), new_admin_article_url, class: "btn btn-success"
+  .panel.panel-default
+    .table-responsive
+      %table.table.table-striped.table-hovered
+        %thead
+          %tr
+            %th #
+            %th= t('activerecord.attributes.article.title')
+            %th= t('activerecord.attributes.article.publish_date')
+            %th= t('activerecord.attributes.article.status')
+            %th= t('.action')
+
+        - @articles.each_with_index do |article, index|
+          %tr
+            %th= index
+            %td= article.title
+            %td= article.publish_date
+            %td= t('activerecord.attributes.article.statuses.' + article.status)
+            %td
+              = link_to t('.edit'), edit_admin_article_url(article)
+              = link_to t('.delete'), admin_article_url(article), method: :delete

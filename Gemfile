@@ -36,8 +36,11 @@ gem 'carrierwave'
 gem "mini_magick"
 gem 'fog'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+#markdown for blog
+gem 'redcarpet'
+
+#globalize article
+gem 'globalize', '~> 4.0.3'
 
 # Use unicorn as the app server
 # gem 'unicorn'

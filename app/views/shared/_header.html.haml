@@ -7,7 +7,7 @@
         %li= link_to "French Burners", frenchburners_url
         %li= link_to "Burning Man", burningman_url
     %li= link_to t('.principles'), principles_url, class: params[:controller] == "pages" && params[:id] == "10-principles" ? "active" : ""
-    %li= link_to t('.blog'), "#"
+    %li= link_to t('.blog'), articles_url, class: params[:controller] == "articles" ? "active" : ""
     %li= link_to t('.events'), "#"
     %li= link_to t('.gallery'), "#"
     %li= link_to t('.contact'), "#"

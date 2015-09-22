@@ -8,7 +8,7 @@ nav.navbar {
   margin-bottom: 0;
 }
 
-#newsletter_index, #user_index, #slideshow_index {
+#newsletter_index, #user_index, #slideshow_index, #article_index, #article_new, #article_edit {
   padding: 20px 5% 0;
 }
 
@@ -24,5 +24,11 @@ nav.navbar {
   .list {
     width: 75%;
     padding: 1%;
+  }
+}
+
+#article_index {
+  p a.btn {
+    margin-bottom: 10px;
   }
 }

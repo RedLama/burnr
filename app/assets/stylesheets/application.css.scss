@@ -139,7 +139,7 @@ a {
 /* =============== */
 /* ==== PAGES ==== */
 /* =============== */
-#page_show {
+#page_show, #article_show, #article_index {
   padding: 2% 15%;
 
   h1, h2, strong {
@@ -170,7 +170,11 @@ a {
     list-style-type: square;
   }
 
-  a{
+  a {
+    color: $_red;
+  }
+
+  a.btn{
     @include inline-block;
     margin-top: 10px;
     margin-bottom: 0;
@@ -203,6 +207,31 @@ a {
       line-height: 142%;
       vertical-align: top;
     }
+  }
+}
+
+/* =============== */
+/* === ARTICLE === */
+/* =============== */
+#article_index {
+  h1 {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  h1 a{
+    font-size: 2.5em;
+    color: $_dark;
+  }
+
+  .subtitle {
+    margin-bottom: 25px;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+
+  .content {
+    margin: 0 0 30px 5%;
+    line-height: 170%;
   }
 }
 

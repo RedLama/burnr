@@ -1,4 +1,16 @@
 fr:
+  activerecord:
+    attributes:
+      article:
+        title: "Titre"
+        content: "Contenu"
+        publish_date: "Date de publication"
+        user_id: "Auteur"
+        status: "Status"
+        statuses:
+          published: "Publié"
+          draft: "Brouillon"
+          archived: "Archivé"
   admin:
     not_enough_right: "Cette page ne vous est pas accessible"
     shared:
@@ -6,6 +18,7 @@ fr:
         newsletter: "Newsletter"
         slideshow: "Slideshow"
         users: "Utilisateurs"
+        articles: "Blog"
     newsletters:
       index:
         email: "Couriel"
@@ -24,7 +37,18 @@ fr:
         create_title: "Ajouter un slide"
         url_placeholder: "Lien du slide"
         submit: "Ajout"
-
+    articles:
+      index:
+        actions: "Actions"
+        edit: "Éditer"
+        delete: "Supprimer"
+        add: "Ajouter un article"
+      new:
+        add_title: "Ajouter un article"
+        submit: "Ajouter cet article"
+      edit:
+        edit_title: "Éditer un article"
+        submit: "Éditer cet article"
   shared:
     header:
       presentation: "Présentation"
@@ -46,7 +70,7 @@ fr:
       subscription_title: "Abonnement à la newsletter"
       email_placeholder: "Entrez votre adresse email"
       subscribe: "Abonnez moi !"
-      love: "Fait avec amour et des "
+      love: "Fait avec de l'amour et des "
       lama: "lamas"
   newsletter:
     flash:
@@ -60,3 +84,14 @@ fr:
       create_fail: "Impossible d'ajouter ce slide"
       delete_success: "Slide supprimé"
       delete_fail: "Impossible de supprimé ce slide"
+  articles:
+    index:
+      date: "Publié le %{date} "
+      author: "par %{author}"
+    flash:
+      create_success: "Article ajouté avec succès"
+      create_fail: "Impossible d'ajouter cet article"
+      delete_success: "Article supprimé"
+      delete_fail: "Impossible de supprimé cet article"
+      update_success: "Article mis à jour avec succès"
+      update_fail: "Impossible de mettre à jour cet article"

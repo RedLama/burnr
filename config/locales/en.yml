@@ -1,4 +1,16 @@
 en:
+  activerecord:
+    attributes:
+      articles:
+        title: "Title"
+        content: "Content"
+        publish_date: "Publication date"
+        user_id: "Author"
+        status: "Status"
+        statuses:
+          published: "Publié"
+          draft: "Brouillon"
+          archived: "Archivé"
   admin:
     not_enough_right: "You can't see this page"
     shared:
@@ -6,6 +18,7 @@ en:
         newsletter: "Newsletter"
         slideshow: "Slideshow"
         users: "Users"
+        articles: "Blog"
     newsletters:
       index:
         email: "Couriel"
@@ -19,6 +32,23 @@ en:
         role: "Role"
         action: "Actions"
         delete: "Delete"
+    slideshows:
+      index:
+        create_title: "Add a slide"
+        url_placeholder: "Slide's link"
+        submit: "Add"
+    articles:
+      index:
+        actions: "Actions"
+        edit: "Éditer"
+        delete: "Supprimer"
+        add: "Ajouter un article"
+      new:
+        add_title: "Add an article"
+        submit: "Add this article"
+      edit:
+        edit_title: "Edit an article"
+        submit: "Edit this article"
   shared:
     header:
       presentation: "Presentation"
@@ -54,3 +84,14 @@ en:
       create_fail: "Unable to add this slide"
       delete_success: "Slide deleted"
       delete_email: "Unable to delete this slide"
+  articles:
+    index:
+      date: "Published at %{date} "
+      author: "by %{author}"
+    flash:
+      create_success: "Article successfully added"
+      create_fail: "Unable to add this article"
+      delete_success: "Article deleted"
+      delete_email: "Unable to delete this article"
+      update_success: "Article successfully updated"
+      update_fail: "Unable to update this article"
