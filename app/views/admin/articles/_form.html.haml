@@ -8,7 +8,7 @@
   = builder.label :status
   = builder.select :status, [ [t('activerecord.attributes.article.statuses.draft'), "draft"],
     [t('activerecord.attributes.article.statuses.published'), "published"],
-    [t('activerecord.attributes.article.statuses.archived'), 'archived'] ], class: "form-control"
+    [t('activerecord.attributes.article.statuses.archived'), 'archived'] ], {}, {class: "form-control"}
 .form-group
   = builder.label :publish_date
   = builder.text_field :publish_date, class: "form-control"
