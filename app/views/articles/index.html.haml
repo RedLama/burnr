@@ -5,7 +5,7 @@
         %h1= link_to article.title, article_url(article)
         %p.subtitle
           - if article.publish_date
-            %span.date= t('.date', date: l(article.publish_date))
+            %span.date= t('.date', date: l(article.publish_date, format: :long))
           %span.author= t('.author', author: article.user.email)
         %div.content
           = markdown(article.content).truncate(1000).html_safe
