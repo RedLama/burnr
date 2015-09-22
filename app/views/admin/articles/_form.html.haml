@@ -11,4 +11,4 @@
     [t('activerecord.attributes.article.statuses.archived'), 'archived'] ], {}, {class: "form-control"}
 .form-group
   = builder.label :publish_date
-  = builder.text_field :publish_date, class: "form-control"
+  = builder.text_field :publish_date, class: "form-control datepicker", "data-locale" => I18n.locale
